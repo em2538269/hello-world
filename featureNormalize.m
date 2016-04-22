@@ -26,6 +26,11 @@ sigma = zeros(1, size(X, 2));
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
 
+% X is a m x 2 matrix, making mu and sigma 2 x 1
+% For each column of X I want to take the mean and subtract it, then the standard deviation and divide by it
+% I did this by applying the 2 x 1 row vector to every row of X using a for loop
+% this will work for an arbitrary matrix m x n but I'd like to vectorize it without a for loop
+
 mu = mean(X);
 sigma = std(X);
 
